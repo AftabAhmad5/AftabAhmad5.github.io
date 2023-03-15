@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!-- <link href="services.css" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        body
+        {
+            background-color: #131316;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container section
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* animation for the text */
+        .hidden
+        {
+            opacity: 0;
+            transition: all 1s;
+            /* transition: all 5s; */
+            filter: blur(5px);
+            transform: translateX(-100%);
+        }
+        .show
+        {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+
+        .logos
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .logo:nth-child(2){
+            transition-delay: 300ms;
+        }
+
+        .logo:nth-child(3){
+            transition-delay: 400ms;
+        }
+
+        .logo:nth-child(4){
+            transition-delay: 600ms;
+        }
+        .logo:nth-child(5){
+            transition-delay: 900ms;
+        }
+
+        .logo
+        {
+            background-color: rgb(83, 76, 76);
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 10px;
+
+        }
+
+        .container
+        {
+            display:flex;
+            flex-direction: column;
+        }
+
+        a
+        {
+            background-color: #131316;
+            color: rgb(255, 255, 255);
+            /* border: 2px solid #e7e7e7; */
+            border-radius: 5px;
+            border:none;
+            transition: 800ms ease-in-out;
+            font-size:13px;
+        }
+        a
+        {
+            color: white;
+            transition: 800ms ease-in-out;
+        }
+        a:hover
+        {
+            background-color: aquamarine;
+            border-radius: 5px;
+            padding:15px 15px;
+        }
+        a:hover
+        {
+            color: black;
+        }
+
+
+        @media only screen and (min-width:200px) and (max-width: 767)
+        {
+            .container
+            {
+                width:100%;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <div style="display:flex; flex-wrap:wrap;"> 
+            <div>
+                <h1 style="margin:20px 20px; padding:20px 20px;">Services</h1>
+            </div>
+            <div style="margin-left:10px; margin-top:55px;">
+                    <a href="#python" style="text-decoration: none;">Python development</a>
+                    &nbsp;&nbsp; 
+                    <a href="#web" style="text-decoration: none;">Web development</a>
+                    &nbsp;&nbsp;
+                    <a href="#embedded" style="text-decoration: none;">Embedded systems</a>
+                    &nbsp;&nbsp;
+                    <a href="index.html" style="text-decoration: none;">Home</a>
+            </div>
+
+        </div>
+    <section class="hidden">
+        <h2 id="python">Python Development</h2>
+        <p style="text-align: center; margin: 10px 15px;">
+            Being a python developer with years of experience and having expertise in popular libraries like OpenCV, Matplotlib, NumPy, TensorFlow, Pandas, Django, and Flask. I'm here to help with projects that require Python programming, such as machine learning models, data visualizations, web applications, and more.
+            My extensive experience in these libraries allows me to deliver efficient and high-quality solutions that meet your needs. I understand the importance of tailoring my solutions to the specific requirements of each project, ensuring that you receive a customized solution.
+            I take pride in my ability to communicate effectively and deliver projects on time. I'm ready to bring my experience and skills to your project, delivering efficient and high-quality solutions that meet your needs.
+        </p>
+            <div style="text-align: center;">
+            <br><b>Services include:</b>
+                        <br>
+            <br>Scientific computing and numerical operations (using NumPy and SciPy)
+            <br>Computer Vision (using OpenCV)
+            <br>IoT programming
+            <br>Web development (using Django and Flask)
+            <br>Data Science and Analytics (using NumPy, Pandas, and Matplotlib)
+            <br>Machine Learning (using TensorFlow and scikit-learn)
+            <br>Automation of repetitive tasks
+            <br>Natural Language Processing
+            <br>Network Programming
+            </div>
+
+
+        <div class="logos">
+
+            <div class="logo hidden">
+                <img src="icons/python.png" alt="image1" style="width:100px;">
+            </div>
+            <div class="logo hidden">
+                <img src="icons/numpyLogoIcon.png" alt="image1" style="width:100px;">
+            </div>
+           
+            <div class="logo hidden">
+                <img src="icons/tensorFlow.png" alt="image2" style="width:100px;">
+            </div>
+
+            <div class="logo hidden">
+                <img src="icons/openCv.png" alt="image2" style="width:100px;">
+            </div>
+
+            <div class="logo hidden">
+                <img src="icons/django.png" alt="image2" style="width:100px;">
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="#" style="text-decoration: none;"><b>Place order</b></a>
+        </div>
+
+    </section>
+    </div>
+
+    <div>
+    <section class="hidden">
+        <h2 id="web">Web Development</h2>
+        <p style="text-align: center; margin: 10px 15px;">
+            I will create a responsive website for you with a focus on HTML, CSS, and JavaScript. Being  developer,
+            I offer services for both client-side and server-side development, using frameworks like Django and Flask.
+            Feel free to inbox for any query or questions. </p>
+            <div style="text-align: center;">
+                <br><b>Services include:</b>
+                        <br>
+                <br>Website Design & Development
+                <br>Custom Web Application Development
+                <br>Client & Server-side Development (using Django or Flask)
+                <br>Responsive Design
+                <br>Maintenance & Support
+                <br>Cross-browser Compatibility
+            </div>
+
+        <div class="logos">
+
+            <div class="hidden">
+                <img src="icons/JSicon.png" alt="image1" style="width:100px;">
+            </div>
+
+            <div class="hidden">
+                <img src="icons/htmlcompressed.png" alt="image2" style="width:100px;">
+            </div>
+
+            <div class="hidden">
+                <img src="icons/css3.png" alt="image2" style="width:100px;">
+            </div>
+
+            <div class="hidden">
+                <img src="icons/django.png" alt="image2" style="width:100px;">
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="#" style="text-decoration: none;"><b>Place order</b></a>
+        </div>
+
+    </section>
+    </div>
+
+    <div>
+    <section class="hidden">
+        <h2 id="embedded">Embedded system</h2>
+        <p style="text-align: center; margin: 10px 15px;">I'm an experienced embedded systems engineer with years of experience in the field. I offer a range of services to help bring your IoT ideas to life, including embedded system design (circuit simulation, circuit desigining, component selection), firmware development in Python and C/C++, and expertise in platforms such as Raspberry Pi and ESP32.</p>
+        <p style="text-align: center; margin: 10px 15px;">My approach to each project is focused on delivering high-quality, reliable solutions. I use agile methodology and maintain open communication with my clients to ensure that projects are completed to their satisfaction. I have a proven track record of delivering projects on time and within budget.</p>
+        <div style="text-align: center;">
+            <br><b>Services include:</b>
+                    <br>
+            <br>IoT project development
+            <br>Embedded system design and development
+            <br>Firmware development in Python and C/C++
+            <br>Platform expertise in Raspberry Pi and ESP32
+            <br>Debugging and testing
+            <br>Performance optimization
+            <br>Technical support and maintenance
+            <br>
+        <p>If you're looking for a skilled and dependable embedded systems engineer, I would be happy to discuss your project and see if I can help. Please contact me to learn more.</p>
+        </div>
+
+        <div class="logos">
+
+            <div class="logo hidden">
+                <img src="icons/python.png" alt="image1" style="width:100px;">
+            </div>
+
+            <div class="logo hidden">
+                <img src="icons/MicroPython_logo.png" alt="image2" style="width:100px;">
+            </div>
+
+            <div class="logo hidden">
+                <img src="icons/C.png" alt="image2" style="width:100px;">
+            </div>
+
+            <div class="logo hidden">
+                <img src="icons/cplusplus.png" alt="image2" style="width:100px;">
+            </div>
+
+            <div class="logo hidden">
+                <img src="icons/raspberrypi.png" alt="image2" style="width:100px;">
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="#" style="text-decoration: none;"><b>Place order</b></a>
+        </div>
+
+    </section>
+    </div>
+</div>
+<script>
+
+const observer = new IntersectionObserver((entries) => {
+entries.forEach((entry)=>{
+    console.log(entry)
+    if(entry.isIntersecting){
+         entry.target.classList.add('show');
+   }
+    else{
+        entry.target.classList.remove('show');
+    }
+});
+});
+
+const hiddentElements = document.querySelectorAll('.hidden');
+hiddentElements.forEach((el) => observer.observe(el));
+
+</script>
+</body>
+
+</html>
