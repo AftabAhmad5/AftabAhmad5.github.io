@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="contact.css"> -->
+    <style>
+        *
+        {
+            margin:0px;
+            padding:0px;
+        }
+        .parent_div
+        {
+            width:100vw; 
+            height:94vh; 
+            display:flex;
+            justify-content: center; 
+            align-items: center;
+            background-color:#e8e8e8;
+
+        }
+
+        .child1_div
+        {
+            width:500px;
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+
+            display:flex;
+            flex-direction: column;
+        }
+
+        .image_items_div
+        {
+            align-self: center;
+        }
+
+        .image_items_div img
+        {
+            width:150px;
+
+            margin:20px 0px; 
+            width: 150px;
+            height: 150px;
+            padding: 8px;
+            border-radius: 50%;
+            box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+                4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .name_items
+        {
+            align-self: center;
+        }
+        p{
+            font-size: 25px;
+        }
+        .icon_items{
+
+            margin:50px;
+            display: flex;
+            justify-content: center;
+            gap:10px
+
+        }
+
+        .icon_items a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: -2px -2px 6px rgba(255, 255, 255, 1),
+                2px 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        .icon_items a {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        }
+
+        .fa-twitter {
+        color: #1ba3e8;
+        }
+        .fa-instagram {
+        color: #cd9ead;
+        }
+
+        .fa-github
+        {
+            color:black;
+            font-size: x-large; 
+        }
+        .fa-envelope, .fa-whatsapp{
+            /* color:#e170; */
+            font-size: large;
+        }
+        .fa-whatsapp{color:green;}
+
+        .dark-mode{
+            background-color: #212121;
+        }
+
+        /* toggle switch.................................. */
+        .fa-moon
+        {
+            font-size: x-large;
+        }
+        .change_color
+        {
+            color:yellow;
+        }
+        .home-btn
+        {
+            background-color: #e8e8e8;
+            padding:17px;
+            text-align: center;
+        }
+        .body-color{
+            background-color: #e8e8e8;
+        }
+        .home-btn-dark-background
+        {
+            background-color: #212121;
+            padding:17px;
+            text-align: center;
+        }
+    </style>
+    <title>Contact</title>
+</head>
+
+<body>
+    <div id="home-btn-div" class="home-btn">
+        <a href="index.html" style="text-decoration: none; color:black; border: none; border-radius: 3px; background-color: #e0e0e0; box-shadow:  2px 2px 3px #bebebe, -2px -2px 3px #ffffff; padding:5px 5px;">Home</a>
+    </div>
+    <div class="parent_div">
+        <div class="child1_div">
+            <div class="image_items_div">
+                <img src="profile.jpg" alt="profile">
+                <!-- <img src="cs50icon.png" alt="profile"> -->
+            </div>
+
+            <div class="name_items"><p><b>Aftab</b></p></div>
+            <div class="icon_items">
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                  <a href=""><i class="fa-regular fa-envelope"></i></a>
+                  <a href=""><i class="fa-brands fa-github"></i></a>
+                  <!-- <a href=""><i class="fa fa-youtube"></i></a>-->
+            </div>
+            <div style="text-align: center; margin-bottom:10px">
+                <button id="dark" style="border:none; background:none;">
+                    <i id="change_icon" class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+    <script src="https://kit.fontawesome.com/6edc3acce4.js" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('#dark').addEventListener('click',function(){
+        document.querySelector('.parent_div').classList.toggle('dark-mode');
+        document.querySelector('#change_icon').classList.toggle('change_color');
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('#home-btn-div a').classList.toggle('dark-mode');
+        document.querySelector('#home-btn-div').classList.toggle('home-btn-dark-background');
+    });
+    </script>
+</body>
+</html>
