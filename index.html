@@ -443,7 +443,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
         </div>
       </div></article>
 
-      <article class="project entry" data-in="all iot power" style="--o-all:2; --o-iot:1; --o-power:3">
+      <article class="project entry" data-in="all iot power" style="--o-all:2; --o-iot:1; --o-power:4">
 <span class="node"></span><div class="card">
         <div>
           <h3>Distributed power outage monitoring fleet</h3>
@@ -468,7 +468,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
         </div>
       </div></article>
 
-      <article class="project entry" data-in="all vision" style="--o-all:3; --o-vision:2">
+      <article class="project entry" data-in="all vision" style="--o-all:4; --o-vision:2">
 <span class="node"></span><div class="card">
         <div>
           <h3>Vision Intelligence Platform</h3>
@@ -488,7 +488,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
         </div>
       </div></article>
 
-      <article class="project entry" data-in="all vision iot" style="--o-all:4; --o-vision:3; --o-iot:4">
+      <article class="project entry" data-in="all vision iot" style="--o-all:5; --o-vision:3; --o-iot:4">
 <span class="node"></span><div class="card">
         <div>
           <h3>Drone detection system with dual sensor fusion</h3>
@@ -507,7 +507,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
         </div>
       </div></article>
 
-      <article class="project entry" data-in="all iot power" style="--o-all:5; --o-iot:2; --o-power:2">
+      <article class="project entry" data-in="all iot power" style="--o-all:6; --o-iot:2; --o-power:3">
 <span class="node"></span><div class="card">
         <div>
           <h3>Intelligent power source identification</h3>
@@ -527,7 +527,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
         </div>
       </div></article>
 
-      <article class="project entry" data-in="all vision iot" style="--o-all:6; --o-vision:4; --o-iot:3">
+      <article class="project entry" data-in="all vision iot" style="--o-all:7; --o-vision:4; --o-iot:3">
 <span class="node"></span><div class="card">
         <div>
           <h3>Drone-based BLE/Wi-Fi device survey system</h3>
@@ -546,7 +546,29 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
         </div>
       </div></article>
 
-      <article class="project entry" data-in="all power" style="--o-all:7; --o-power:1">
+      <article class="project entry" data-in="all power" style="--o-all:3; --o-power:1">
+<span class="node"></span><div class="card">
+        <div>
+          <h3>Off-grid solar–wind–battery–diesel feasibility study</h3>
+          <p class="p-sub">Rural electrification, Kampung Bario, Sarawak, Malaysia</p>
+          <ul class="p-tags"><li class="t-power">Power &amp; renewables</li></ul>
+          <div class="metrics">
+            <div><b>46.9%</b><span>lower 25-year cost than diesel-only</span></div>
+            <div><b>60.7%</b><span>less diesel burned per year</span></div>
+          </div>
+        </div>
+        <div>
+          <ul class="points">
+            <li>Modelled a standalone hybrid system in HOMER Pro for a representative 500 kWh/day load (60 kW peak), using more than 40 years of NASA POWER solar and wind data.</li>
+            <li>The best configuration is 75 kW of PV, 200 kWh of battery, a 67 kW diesel generator and a 34 kW converter. It serves 100% of the load with a 41% renewable fraction, a net present cost of $446k against $841k for diesel-only, an LCOE of $0.19 against $0.36/kWh, and a 2.9-year simple payback.</li>
+            <li>Ran a 27-case sensitivity study across diesel price, solar irradiance and wind speed. The hybrid was cheaper than diesel-only in every case (37% to 64% savings) with 0% unmet load throughout.</li>
+            <li>Showed that the site's weak wind (about 1.2 m/s at 50 m) does not justify a turbine, and documented the with-wind option separately for comparison. Listed the assumptions and search-space limits to validate before procurement.</li>
+          </ul>
+          <ul class="stack"><li>HOMER Pro</li><li>NASA POWER data</li><li>solar PV</li><li>battery storage</li><li>diesel generator</li><li>NPC/LCOE</li><li>sensitivity analysis</li></ul>
+        </div>
+</div></article>
+
+      <article class="project entry" data-in="all power" style="--o-all:8; --o-power:2">
 <span class="node"></span><div class="card">
         <div>
           <h3>Portable hybrid wind–solar turbine system</h3>
@@ -739,7 +761,7 @@ var LENSES = {
         ["Streaming & systems", ["FFmpeg","PyAV","HLS","multiprocessing","asyncio","buffering","auto-reconnect","Linux","systemd"]],
         ["Embedded & hardware", ["Raspberry Pi Zero 2 W/4B","ESP32","Arduino","GPIO","I2C","SPI","MQTT","ACS712","ADS1115","GPS/NMEA","BLE","Wi-Fi"]],
         ["Software & data", ["Python","C/C++","MicroPython","SQL","Flask","REST APIs","SQLite","PostgreSQL","SQLAlchemy","pandas","Git/GitHub"]],
-        ["Electrical engineering", ["power transmission & distribution","protection systems","fault analysis","relay protection","high-voltage engineering","power factor correction","switchgear","solar PV","hybrid renewable systems"]]
+        ["Electrical engineering", ["power transmission & distribution","protection systems","fault analysis","relay protection","high-voltage engineering","power factor correction","switchgear","solar PV","hybrid renewable systems","wind turbine design","HOMER Pro","techno-economic analysis"]]
       ]
     },
     vision: {
@@ -783,7 +805,7 @@ var LENSES = {
     power: {
       role: "Electrical power & renewable energy engineer",
       sub: "Smart grid and embedded systems.",
-      profile: "I hold a BSc in Electrical Engineering (Power Major) and have nearly four years of full-time experience in electrical installation, testing and commissioning, plus a protection-systems internship at Pakistan's national grid operator, NTDC. Since 2019 I've also delivered international embedded/IoT and power-monitoring projects that connect electrical systems with sensing, edge computing and software. A strong fit for power, protection, renewable energy, smart-grid and energy-monitoring roles.",
+      profile: "I hold a BSc in Electrical Engineering (Power Major) and have nearly four years of full-time experience in electrical installation, testing and commissioning, plus a protection-systems internship at Pakistan's national grid operator, NTDC. Since 2019 I've also delivered international embedded/IoT and power-monitoring projects that connect electrical systems with sensing, edge computing and software, and recently completed a HOMER Pro feasibility study for an off-grid solar-wind-battery-diesel system. A strong fit for power, protection, renewable energy, smart-grid and energy-monitoring roles.",
       note: "Showing projects most relevant to power and renewable energy.",
       skillNote: "Power systems, renewables and monitoring skills.",
       jobTitle: "Freelance engineer",
@@ -793,7 +815,7 @@ var LENSES = {
       ],
       skills: [
         ["Power systems", ["power transmission & distribution","power system protection","fault analysis","relay protection","high-voltage engineering","switchgear","power-factor correction"]],
-        ["Renewable energy", ["solar PV integration","wind turbine design","HAWT/VAWT","blade aerodynamics","Betz limit","TSR calculations","hybrid systems","feasibility analysis"]],
+        ["Renewable energy", ["solar PV integration","wind turbine design","HAWT/VAWT","blade aerodynamics","Betz limit","TSR calculations","hybrid systems","feasibility analysis","HOMER Pro","off-grid hybrid design","NPC/LCOE economics","sensitivity analysis"]],
         ["Embedded & monitoring", ["Raspberry Pi","ESP32","Arduino","GPIO","I2C","SPI","ACS712","ADS1115","GPS/NMEA","MQTT","Linux","systemd"]],
         ["Software & data", ["Python","C/C++","SQL","Flask","REST APIs","SQLite","PostgreSQL","SQLAlchemy","Git/GitHub"]]
       ]
